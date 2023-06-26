@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="menuright">
+		<div class="name">RIDDHI</div>
+		<a href="javascript:void(0);" id="menubt" class="a_home">
+			<i class="fa fa-bars menu_icon" aria-hidden="true" ></i>
+		</a>
+	</div>
+	<div class="menu" id="menu">
+		<ul>
+			<li id="m1" onclick="openmenu('div1')">Home</li>
+			<li id="m2" onclick="openmenu('div2')">About</li>
+			<li id="m3" onclick="openmenu('div3')">Projects</li>
+			<li id="m4" onclick="openmenu('div4')">Hobbies</li>
+			<li id="m5" onclick="openmenu('div5')">Contact</li>
+		</ul>
+	</div>
+	<section id="sec1"  onclick="opensec(this)" style="background-color: #17a2b8"></section>
+	<section id="sec2"  onclick="opensec(this)" style="background-color: #3b6978"></section>
+	<section id="sec3"  onclick="opensec(this)" style="background-color: #84a9ac"></section>
+	<section id="sec4"  onclick="opensec(this)" style="background-color: #87C8C5"></section>
+	<section id="sec5"  onclick="opensec(this)" style="background-color: white"></section>
+
+	<div id="div1" data-title="HOME" style="display: none;">
+		<div class="container-fluid">
+			<div class="row no-gutters">
+				<div class="col-md-4 col-12 bgcolor homecol">
+				</div>
+				<div class="col-md-1 col-1"></div>
+				<div class="col-md-7 col-11">
+					<div class="container">
+						<div class="row no-gutters textrow">
+							<div class="col-md-8 textcol">
+								<div class="row">
+									<div class="col-md-8 col-12 text1">HELLO, THERE</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-12 text2">I'M RIDDHI SOJITRA</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-12 text3 mt-2">WEB DEVLOPER</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-12 mt-3"><a class="btn download-button" href="resume.pdf" download>DOWNLOAD CV</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="div2" class="mb-5" data-title="ABOUT" style="display: none;">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-12">
+					<div class="mt-5 h2 about_title text-center mb-5" style="color:#D63F60;">ABOUT MY SELF</div>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-md-4 ml-5">
+					<div class="card border-0 rounded">
+						<div class="education">
+							<img src="images/edunew.png" height="283px" class="card-img">
+							<div class="container card-img-overlay layer1">
+								<div class="row edu align-items-center">
+									<div class="col text-center">
+										<div class="heading">Education</div>
+									</div>
+								</div>
+								<div class="row justify-content-center rowread">
+									<div class="col-md-4 text-center">
+										<button type="button" class="button button-block readmore" data-toggle="modal" data-target="#educationmodal">Read More</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"></div>
+				<div class="col-md-4">
+					<div class="card border-0 rounded">
+						<div class="education">
+							<img src="images/technical-skills.jpg"  height="283px" class="card-img">
+							<div class="container card-img-overlay layer1">
+								<div class="row edu align-items-center">
+									<div class="col text-center">
+										<div class="heading">Technical Skills</div>
+									</div>
+								</div>
+								<div class="row justify-content-center rowread">
+									<div class="col-md-4 text-center">
+										<button type="button" class="button readmore" data-toggle="modal" data-target="#skillmodal">Read More</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row no-gutters my-5">
+				<div class="col-md-12"></div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-md-4 ml-5">
+					<div class="card border-0 rounded">
+						<div class="education">
+							<img src="images/work-experience.jpg" height="283px" class="card-img">
+							<div class="container card-img-overlay layer1">
+								<div class="row edu align-items-center">
+									<div class="col text-center">
+										<div class="heading">Experience</div>
+									</div>
+								</div>
+								<div class="row justify-content-center rowread">
+									<div class="col-md-4 text-center">
+										<button type="button" class="button readmore" data-toggle="modal" data-target="#experincesmodal">Read More</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=col-md-3></div>
+				<div class="col-md-4">
+					<div class="card border-0 rounded">
+						<div class="education">
+							<img src="images/extra-curricular.jpg" height="283px" class="card-img">
+							<div class="container card-img-overlay layer1">
+								<div class="row edu align-items-center">
+									<div class="col text-center">
+										<div class="heading">Extra Curriculum</div>
+									</div>
+								</div>
+								<div class="row justify-content-center rowread">
+									<div class="col-md-4 text-center">
+										<button type="button" class="button readmore" data-toggle="modal" data-target="#extramodal">Read More</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="div3" data-title="PROJECTS" style="display: none;height:100vh">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-12 h1 text-center mt-5" style="color: #D63F60;">Projects</div>
+			</div>
+			<div class="row my-3">
+				<div class="col-md-4">
+					<div class="card">
+  						<h5 class="card-header">jokester.in</h5>
+  						<div class="card-body"><div class="card-text"><b>Frontend-</b> ReactJs</div><div class="card-text"><b>Backend-</b> Nodejs</div><div class="card-text"><b>Databace-</b> Mongodb(Mongoose)</div></div></div>
+					
+				</div>
+				<div class="col-md-4"><div class="card"><h5 class="card-header">Login with OTP</h5>
+  						<div class="card-body"><div class="card-text"><b>Frontend-</b> ReactJs</div><div class="card-text"><b>Backend-</b> Nodejs</div><div class="card-text"><b>Databace-</b> Mongodb(Mongoose)</div></div></div></div>
+				<div class="col-md-4">
+						<div class="card">
+  						<h5 class="card-header">E-commerce project</h5>
+  						<div class="card-body"><div class="card-text"><b>Frontend-</b> ReactJs</div><div class="card-text"><b>Backend-</b> Nodejs</div><div class="card-text"><b>Databace-</b> Mongodb(Mongoose)</div></div></div>
+					
+				</div>
+			</div>
+				<div class="row my-3">
+				<div class="col-md-4">
+					<div class="card">
+  						<h5 class="card-header">Product Managment</h5>
+  						<div class="card-body"><div class="card-text"><b>Language-</b> Nodejs</div></div></div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+  						<h5 class="card-header">Daynamic Form</h5>
+  						<div class="card-body"><div class="card-text"><b>Language-</b> Javascript</div></div></div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+  						<h5 class="card-header">Protfoliyo</h5>
+  						<div class="card-body"><div class="card-text"><b>Language-</b> Bootstrap, Jquery</div></div></div>
+					
+				</div>
+			</div>
+			<div class="row my-3">
+				<div class="col-md-4">
+					<div class="card">
+  						<h5 class="card-header">Leave Report and Load Adjesment</h5>
+  						<div class="card-body"><div class="card-text"><b>Language-</b> Asp.net, Jquery</div><div class="card-text"><b>Database-</b> SQL Server</div></div></div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+  						<h5 class="card-header">yellow page</h5>
+  						<div class="card-body"><div class="card-text"><b>Language-</b> PHP, Jquery</div><div class="card-text"><b>Database-</b> My Sql</div></div></div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+  						<h5 class="card-header">Information About Diploma Studies Center</h5>
+  						<div class="card-body"><div class="card-text"><b>Language-</b> Active server page, HTML</div><div class="card-text"><b>Database-</b> My Access</div></div></div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="div4" data-title="HOBBIES" style="display: none;height: 100vh">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="h1 text-center mb-5 mt-5" style="color: #D63F60;">Hobbies</p>
+				</div>
+			</div>
+			<div class="row justify-content-around">
+				<div class="col-md-3 col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-television fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-9 fnz20">Developing</div>
+					</div>
+				</div>
+				<div class="col-md-3  col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-book fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-4 fnz20">Reading</div>
+					</div>
+				</div>
+				<div class="col-md-3  col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-paint-brush fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-9 fnz20">Painting</div>
+					</div>
+				</div>
+			</div>
+			<div class="row  justify-content-around">
+				<div class="col-md-3 col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-video-camera fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-9 fnz20">Cinema</div>
+					</div>
+				</div>
+				<div class="col-md-3  col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-bullseye fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-9 fnz20">Sports</div>
+					</div>
+				</div>
+				<div class="col-md-3  col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-music fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-9 fnz20">Music</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-around mb-5">
+				<div class="col-md-3 col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-line-chart fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-9 fnz20">Other Activity</div>
+					</div>
+				</div>
+				<div class="col-md-3  col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-coffee fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-9 fnz20">Cooking</div>
+					</div>
+				</div>
+				<div class="col-md-3  col-9 bg-light py-3 my-5 hobbi">
+					<div class="row">
+						<div class="col-md-3 col-3"><i class="fa fa-music fnz30" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-9 fnz20">Painting</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="div5" data-title="CONTACT" style="display: none;height:100vh">
+		<div class="container">
+			<div class="row pt-2">
+				<div class="col-md-12">
+					<p class="h2 text-center mb-5 mt-5" style="color: #D63F60">CONTACT ME</p>
+				</div>
+			</div>
+			<div class="row justify-content-center mb-3">
+				<div class="col-md-6 col-12 text-center">
+					<div class="row">
+						<div class="col-md-12"><i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 40px;color: #D63F60"></i> &nbsp;&nbsp;&nbsp;<a style="text-decoration: none !important;font-size: 30px !important;color:#D63F60 !important" href="mailto:riddhi.borad@yahoo.com">riddhi.borad@yahoo.com</a></div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- -----------------modal---------------------- -->
+	<div class="modal fade" id="educationmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content" style="background: #5ACEDA">
+				<div class="modal-header">
+					<h5 class="modal-title text-white" id="exampleModalCenterTitle">About Education</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-white">
+					<p class="tecnology_text">Bachelor of Engineering in Computer Science from Om Shanti Engineering College, 2012</p>
+					<p class="tecnology_text">Gujarat Technological University(GTU)</p>
+					<p class="tecnology_text">Diploma in Computer Engineering from Atmiya Institute, 2009</p>
+					<p class="tecnology_text">Technical Examinations Bord(TEB)</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="skillmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content bg-info">
+				<div class="modal-header">
+					<h5 class="modal-title text-white" id="exampleModalCenterTitle">About Technical Skills</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-white">
+					
+					<p class="h4 mb-3">Web Development Technology</p>
+					<pre class="tecnology_text ">HTML-5              Json</pre>
+					<pre class="tecnology_text ">css-3               Ads JS EC6</pre>
+					<pre class="tecnology_text ">Bootstrap           Typescript</pre>
+					<pre class="tecnology_text ">javascript          Mongodb</pre>
+					<pre class="tecnology_text ">jquery              Experssion</pre>
+					<pre class="tecnology_text ">Reactjs             Nodejs</pre>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="experincesmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content bg-info">
+				<div class="modal-header">
+					<h5 class="modal-title text-white" id="exampleModalCenterTitle">About Experience</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-white">
+					<p class="tecnology_text"><b>Organization</b> :- Ace Software Expert Pvt. Ltd.</p>
+					<p class="tecnology_text"><b>Duration</b>	:- 1st January, 2013 to 31st March, 2016</p>
+					<p class="tecnology_text"><b>Designation</b> :- Senior Data Analyst</p>
+					<p class="tecnology_text"><b>Synopsis</b> :- Conversion of LaTeX code, PDFs, Word documents, etc to XML for publication.</p>
+					<hr/>
+					<p class="tecnology_text"><b>Organization</b> :- Jokester Multi Vendor Pvt. Ltd.</p>
+					<p class="tecnology_text"><b>Duration</b>	:- 1st May, 2021 to Present</p>
+					<p class="tecnology_text"><b>Designation</b> :- Senior Software Developer</p>
+					<p class="tecnology_text"><b>Synopsis</b> :- jokester.in ecommerce project using nodejs(backend), reacejs(frontend), mongoose(database).</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="extramodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content bg-info">
+				<div class="modal-header">
+					<h5 class="modal-title text-white" id="exampleModalCenterTitle">About Extra Curriculum</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-white">
+					
+						<p class="tecnology_text">Participated in C/C++ debugging at Tech-Utakarsh held at Atmiya Institute, Rajkot in 2008.</p>
+						<p class="tecnology_text">Participated in poster presentation on Sixth Sense in "Elixir-2010", a national level technical symposium in March 2010 at V.V.P. engineering College, Rajkot.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<script>
+		var c=1;	//div number
+		document.getElementById('sec5').innerHTML=document.getElementById('div1').outerHTML;
+		document.getElementById('div1').style.display="block";
+		var menu=document.getElementById('menubt');
+		menu.addEventListener("click",newpage);
+
+		function effect(){
+			for(j=5;j>0;j--,c++){
+				if(c>5){
+					c=1;
+				}
+				var sec = document.getElementById('sec'+j);
+				var div = document.getElementById('div'+c);
+				if(j!=5)
+				sec.innerHTML = "<center><div class='span-title'>"+div.getAttribute("data-title")+"</div></center>";
+				sec.innerHTML +=div.outerHTML;
+			}
+
+			for(i=1;i<=5;i++){
+				document.getElementById('div'+i).style.display="block";
+			}
+
+			for(i=1;i<=5;i++){
+				document.getElementById('sec'+i).className="hidesec effect"+i;
+			}
+		}
+
+		var s=document.getElementsByTagName("section");
+		function sectionhide(){
+			for(i=0;i<5;i++){
+				s[i].className="hidesec";
+			}
+		}
+
+		function openmenu(m){
+			var fdivid=m.substr(3);
+			c=Number(fdivid);
+			document.getElementById('sec5').innerHTML=document.getElementById(m).outerHTML;
+			menuclose();
+		}
+
+		function fullscr(){
+			document.getElementById('menu').className="menu";
+			menu.removeEventListener("click",menuclose);
+			menu.innerHTML="<i class='fa fa-bars menu_icon' aria-hidden='true' ></i>";
+			menu.addEventListener("click",newpage);
+			if(c==2){
+				document.getElementById("sec5").className+=" overflow-auto";
+			}
+		}
+
+		function newpage(){
+			document.getElementsByTagName('body')[0].style.overflow="hidden";
+			document.getElementsByTagName('body')[0].style.background="black";
+			document.getElementById('menu').className +=" effectmenu";
+			effect();
+			menu.removeEventListener("click",newpage);
+			menu.innerHTML="<i class='fa fa-times' aria-hidden='true'></i>";
+			menu.addEventListener("click",menuclose);
+		}
+		
+		function menuclose(){
+			sectionhide();
+			document.getElementById('sec5').className="woeffect";
+			fullscr();
+		}
+
+		function opensec(sec){
+			var dv=sec.lastChild.getAttribute('id');
+			var divid=dv.substr(3);
+			c=Number(divid);
+			document.getElementById('sec5').innerHTML=document.getElementById('div'+c).outerHTML;
+			menuclose();
+		}
+</script>
+</body>
+</html>
